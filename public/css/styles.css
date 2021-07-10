@@ -1,0 +1,957 @@
+/* -- IMPORT FONTS  --  */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
+@import url("https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco");
+/* -- RESET STYLES --  */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0 0 0 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+/* -- BASE STYLES --  */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    margin: 0 0 5em 0;
+    left: 0;
+    top: 0;
+    color: #4a4a4a;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+h1 {
+    font-family: "Poppins", Helvetica, sans-serif;
+    color: #050505;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+h2 {
+    color: #050505;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+h3 {
+    color: #050505;
+    font-size: 1.375rem;
+    font-weight: 500;
+}
+mark {
+    background-color: #fff6ea;
+}
+.pure-g [class*=pure-u],
+body {
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+a:active,
+a:link,
+a:visited {
+    /*color: #000;*/
+    
+    color: #050505;
+}
+a {
+    text-decoration: none;
+}
+a:focus,
+a:hover,
+.home-menu .is-active a {
+    opacity: 0.5 !important;
+}
+.home-menu .about.is-active a,
+.about a,
+.about a:focus,
+.about a:hover {
+    opacity: 1.0 !important;
+}
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+/* -- MAIN MENU STYLES --  */
+
+header {
+    position: relative;
+}
+header .background {
+    background: rgba(255,255,255,0.9);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top:0;
+    height:100%;
+    z-index: 1;
+}
+.pure-menu-horizontal .pure-menu-list {
+    display: inline-block;
+}
+.logo-area a {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.logo-area a,
+.pure-menu-link,
+.pure-menu-selected .pure-menu-link,
+.pure-menu-selected .pure-menu-link:visited {
+    color: #050505;
+}
+.pure-menu-horizontal .pure-menu-heading,
+.pure-menu-horizontal .pure-menu-item,
+.pure-menu-horizontal .pure-menu-separator {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+}
+/* -- LAYOUT STYLES --  */
+
+.row {
+    margin-bottom: 3.75em;
+    margin-top: 3.75em;
+}
+header .row,
+.row .clients,
+.contact-bar {
+    align-items: center;
+}
+header .content-wrapper,
+main,
+footer {
+    max-width: 56.25em;
+    margin: 0 auto;
+}
+header .content-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.pure-u-lg-1-3,
+.pure-u-3-5,
+.pure-u-2-5,
+.pure-u-lg-2-3,
+.pure-u-1,
+footer section,
+.container {
+    padding: 0 1em;
+}
+/* -- SECTION STYLES --  */
+
+section.intro {
+    align-items: center;
+    margin-top: 7.25em;
+}
+.intro figure {
+    text-align: right;
+    padding: 0;
+}
+hr {
+    /*width: 5.625em;*/
+    
+    width: 100%;
+    border: 0.0625em solid #f3f3f3;
+    margin: 0 auto 0 1em;
+}
+/* -- GALLERY STYLES --  */
+
+body .gallery-item {
+    margin-bottom: 2.5em;
+}
+body .gallery-item img {
+    border: 0.3125em solid #fff;
+    padding: 0.625em;
+    outline: 0.0625em solid #eee;
+}
+body .gallery-item h5 {
+    font-size: 1em;
+    margin-bottom: 0.3125em;
+    margin-top: 1.25em;
+}
+body .gallery-item h5 span {
+    float: right;
+}
+body .gallery-item p {
+    font-size: 0.9em;
+    opacity: .7;
+}
+
+body .gallery-item img {
+    border: 0.3125em solid #fff;
+    padding: 0.625em;
+    outline: 0.0625em solid #eee;
+}
+body .gallery-item h5 {
+    font-size: 1em;
+    margin-bottom: 0.3125em;
+    margin-top: 1.25em;
+}
+body .gallery-item h5 span {
+    float: right;
+}
+body .gallery-item p {
+    font-size: 0.8em;
+}
+body .gallery-item p:first-of-type {
+    margin-bottom: 1em;
+    font-size: 0.9em;
+}
+body .gallery-item:last-of-type {
+    margin-bottom: 0;
+}
+/* -- GALLERY META --  */
+
+.gallery-cover {
+    position: relative;
+}
+.gallery-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(24, 27, 29, 0.5);
+    opacity: 0;
+}
+.gallery-cover:hover .gallery-info {
+    opacity: 1;
+    transition: opacity .15s ease-in-out;
+    -moz-transition: opacity .15s ease-in-out;
+    -webkit-transition: opacity .15s ease-in-out;
+}
+.gallery-info ul li {
+    display: inline;
+    margin: 0 0 0 0.3125em;
+    padding: 0;
+    color: #999;
+}
+.gallery-info ul li a {
+    color: #232323;
+    margin: 0;
+    padding: 0;
+    font-size: 0.625em;
+    background: #fff;
+    padding: 0.75rem 1rem;
+    letter-spacing: 0.0625em;
+    text-transform: uppercase;
+}
+.gallery-meta {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+.gallery-meta li:hover a {
+    opacity: .9;
+    color: #232323 !important;
+}
+
+/*Favorite Button Hover*/
+
+.gallery-item h5 span.fav-wrap {
+    position: relative;
+}
+.gallery-item .gallery-skills {
+    font-style: italic;
+}
+/* Contact Bar */
+
+header .row,
+.row .clients,
+.contact-bar {
+    align-items: center;
+}
+.contact-bar {
+    border-radius: 0.25em;
+    color: #1e90ff;
+    background-color: #e6f2ff;
+    font-size: 0.875rem;
+    padding: .5em 0;
+}
+.contact-bar .mail-button {
+    text-align: right;
+}
+a.email {
+    background-color: #1e90ff;
+    color: white;
+    border-radius: 0.25em;
+}
+
+/* Footer */
+
+footer section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer,
+footer a,
+footer a:visited {
+    color: #9b9b9b;
+}
+.row.contact-bar {
+    align-items: center;
+}
+/*
+ * -- MENU STYLES --
+ * I want to customize how my .pure-menu looks at the top of the page
+ */
+.home-menu {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 0.0625em 0.0625em rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.pure-menu.pure-menu-fixed {
+    border-bottom: none;
+    z-index: 11;
+}
+.home-menu .pure-menu-heading {
+    color: #050505;
+    font-weight: 700;
+    font-size: 100%;
+}
+.home-menu .pure-menu-selected a {
+    color: #050505;
+}
+.home-menu a {
+    color: #050505;
+    font-weight: normal;
+    opacity: 1.0 !important;
+    letter-spacing: 0.0125em;
+}
+.home-menu li a:focus {
+    background: none;
+    border: none;
+}
+.home-menu li a:hover {
+    background: none;
+    border: none;
+    color: #050505;
+    opacity: 0.5 !important;
+}
+/* Chart Styles */
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/* Bar Delays Animation Function */
+
+.dark .chart-wrap {
+    background-color: white;
+    color: #262626;
+}
+.chart-wrap {
+    max-width: 56.25em
+    margin: 0 auto;
+    padding: 0.625em;
+    border: 0.0625em solid #eeeeee;
+}
+.chart-wrap .chart-title {
+    margin-bottom: 0.625em;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.chart-wrap .chart-row {
+    position: relative;
+    height: 1.625em;
+    margin-bottom: 1em;
+}
+.chart-wrap .bar-wrap {
+    position: relative;
+    background: #d7dbde;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.chart-wrap .bar-wrap .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #f37167;
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+.chart-wrap .bar-wrap .bar.in {
+    transform: translateX(0%);
+}
+.chart-wrap .chart-row:nth-of-type(1) .bar {
+    transition: 1s 400ms;
+}
+.chart-wrap .chart-row:nth-of-type(2) .bar {
+    transition: 1s 600ms;
+}
+.chart-wrap .chart-row:nth-of-type(3) .bar {
+    transition: 1s 800ms;
+}
+.chart-wrap .chart-row:nth-of-type(4) .bar {
+    transition: 1s 1000ms;
+}
+.chart-wrap .chart-row:nth-of-type(5) .bar {
+    transition: 1s 1200ms;
+}
+.chart-wrap .chart-row:nth-of-type(6) .bar {
+    transition: 1s 1400ms;
+}
+.chart-wrap .chart-row:nth-of-type(7) .bar {
+    transition: 1s 1600ms;
+}
+.chart-wrap .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9.375rem;
+    padding-left: 0.625rem;
+    text-align: left;
+    font-size: 0.75rem;
+    line-height: 1.625rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    z-index: 10;
+}
+.chart-wrap .number {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.875rem;
+    padding-right: 0.625em;
+    font-size: 1.125em;
+    line-height: 1.625rem;
+    font-weight: bold;
+    text-align: right;
+    z-index: 10;
+}
+.chart-wrap #chart-frontend .bar-wrap .bar {
+    background-color: #58a2e2;
+}
+
+/* Bar Delays Animation Function */
+
+.barDelays (@index,
+@moredelay,
+@amount) when (@index<(@amount+1)) {
+    @multi: (@index*200ms);
+    @delay: @multi+@moredelay;
+    .chart-row:nth-of-type(@ {
+        index
+    }
+    ) {
+        .bar {
+            transition: 1s @delay;
+        }
+    }
+    .barDelays(@index+1,
+    @moredelay,
+    @amount);
+}
+/* Media Queries */
+
+/* max width 568px */
+
+@media screen and (max-width: 35.5em) {
+    .intro figure {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .chart-wrap .chart-row {
+        padding: 0 2.5rem 0 10rem;
+    }
+    .chart-wrap .label {
+        text-align: right;
+        padding-left: 0;
+    }
+    .chart-wrap .number {
+        text-align: left;
+        padding-right: 0;
+    }
+}
+
+/* max width 767px */
+
+@media (max-width: 47.9375em) {
+    body .gallery-item {
+        padding: 0 !important;
+        margin: 0 0 2.5em;
+    }
+}
+
+/* max width 1024px */
+
+@media screen and (max-width: 64em) {
+    header .content-wrapper,
+    main,
+    footer {
+        max-width: 85%;
+    }
+    .intro figure {
+        margin: auto;
+        text-align: center;
+    }
+    .container {
+        padding: 0;
+    }
+    .column {
+        text-align: center;
+        margin-bottom: 1.25em;
+    }
+    .column:last-of-type {
+        margin: 0 auto;
+        margin-bottom: 0;
+    }
+    .row {
+        margin: 2.5em 0;
+    }
+    .contact-bar {
+        padding: 1.875em;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .contact-bar .mail-button {
+        text-align: center;
+    }
+    .contact-bar a.email {
+        margin-top: 1.25em;
+    }
+}
+/* Primary input mechanism system can 
+   hover over elements with ease */
+
+@media (hover: hover) {}
+/* Primary input mechanism cannot hover 
+   at all or cannot conveniently hover 
+   (e.g., many mobile devices emulate hovering
+   when the user performs an inconvenient long tap), 
+   or there is no primary pointing input mechanism */
+
+@media (hover: none) {
+    .gallery-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(24, 27, 29, 0.5);
+        opacity: 1;
+    }
+}
+
+.gallery-item {
+    display: none;
+}
+
+.gallery-item.fade-in {
+    display: block;
+}
+
+h1.slide-in-left {
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+h2.slide-in-left {
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.25s both;
+            animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.25s both;
+}
+
+.slide-in-right {
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-in-top {
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.fade-in-left {
+    -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.fade-in-right {
+    -webkit-animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.fade-in-top {
+    -webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.fade-in {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+            animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+}
+
+.p1.fade-in {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+            animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+}
+
+.p2.fade-in {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.75s both;
+            animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.75s both;
+}
+
+.p3.fade-in {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.0s both;
+            animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.0s both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-7-17 17:10:32
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-7-17 17:4:51
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-7-17 17:12:8
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-7-17 17:17:35
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-7-17 17:19:4
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-7-17 17:20:36
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-7-17 17:21:37
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
